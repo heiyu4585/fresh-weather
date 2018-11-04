@@ -378,7 +378,7 @@ const $ = {
   },
   _daily: (data) => {
     let weekly = []
-    for (let i = 0; i <= 6; i++) {
+    for (let i = 0; i < data.length; i++) {
       let r = data[i]
       weekly.push({
         day: r.cond_txt_d,
